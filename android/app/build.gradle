@@ -26,7 +26,7 @@ if (flutterVersionName == null) {
 android {
     namespace = "com.example.easy_unit_test_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "26.1.10909125"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -50,6 +50,9 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.debug
         }
+    }
+    buildFeatures {
+        viewBinding true
     }
 }
 
