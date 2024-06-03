@@ -6,7 +6,7 @@ extension FormatNumber on double {
       return number.toInt().toString();
     } else {
       // Преобразуем число в строку с фиксированной точностью
-      String numberString = number.toStringAsFixed(2);
+      String numberString = number.toStringAsFixed(4);
       // Удаляем точку, если она является последним символом
       numberString = numberString.replaceAll(RegExp(r'\.$'), '');
       return numberString;
