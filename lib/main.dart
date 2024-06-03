@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    _selectedInputUnit ??= _units[6];
+    _selectedInputUnit ??= _units.last;
     _selectedOutputUnit ??= _units.first;
 
     final themeData = Theme.of(context);
